@@ -8,3 +8,5 @@ More information will follow soon.
 
 First start username: **admin**
 first start password: **cmsimplified**
+
+Powered by *phpFileTree* and *Parsedown*
