@@ -2,7 +2,7 @@
     <?php include("cms-needed/sites/$edit/vars.php"); ?>
                 <form action="interface.php?type=savefile" method=POST>
                     <input type=hidden name="sf" value=<?php echo($edit)?> >
-                    <p>Inhalt der Seite (<a href=https://agea.github.io/tutorial.md>MD</a> - Powered by <a href="https://parsedown.org/">Parsedown</a>): </p>
+                    <p>Inhalt der Seite (<a href=https://www.heise.de/mac-and-i/downloads/65/1/1/6/7/1/0/3/Markdown-CheatSheet-Deutsch.pdf>MD</a> - Powered by <a href="https://parsedown.org/">Parsedown</a>): </p>
                     <textarea id="content" name="sf_content" rows=20><?php readfile("cms-needed/sites/$edit/content.php"); ?></textarea>
                     <p/>
                     <details>

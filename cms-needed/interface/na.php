@@ -14,14 +14,15 @@
 
     <hr>
     <br/>
-<?php require_once("cms-needed/phpFileTree/php_file_tree.php");
-echo("<p><abbr title='Du kannst diese Dateien mit MD einbinden! Mache aber davor noch ein \"files/\"'>Alle Dateien, die du verwenden kannst:</abbr></p>");
-echo(php_file_tree("files/", "[link]")); ?>
+    <?php require_once("cms-needed/phpFileTree/php_file_tree.php");
+    echo("<p><abbr title='Du kannst diese Dateien mit MD einbinden! Mache aber davor noch ein \"files/\"'>Alle Dateien, die du verwenden kannst:</abbr></p>");
+    echo(php_file_tree("files/", "interface.php?type=napreview&link=[link]")); ?>
+    <form method=POST enctype=multipart/form-data action="interface.php?type=upload"><input name="file" type=file><button type=submit>Hochladen!</button></form>
     <br/>
     <hr>
     <br/>
 
-    <a href="https://cmsupdate.sivery.de">Guck hier, ob es eine neuere Version verfügbar ist.</a>
+    <p>Suche nach neuen updates auf <a href=cmsupdate.sivery.de>cmsupdate.sivery.de</a></p>
 
     <br/>
     <hr>

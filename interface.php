@@ -6,6 +6,7 @@ if ($_SESSION[succes]){
     $type = isset($_GET["type"]) ? $_GET["type"] : "na";
     $ds = isset($_GET["ds"]) ? $_GET["ds"] : "N/A";
     $confirm = isset($_GET["confirm"]) ? $_GET["confirm"] : "N/A";
+    $pre_file = isset($_GET["link"]) ? $_GET["link"] : "N/A";
     $sf_content = isset($_POST["sf_content"]) ? $_POST["sf_content"] : "N/A";
     $sf_title = isset($_POST["sf_title"]) ? $_POST["sf_title"] : "N/A";
     $sf_sidebar = isset($_POST["sf_sidebar"]) ? $_POST["sf_sidebar"] : "N/A";
@@ -19,7 +20,7 @@ if ($_SESSION[succes]){
     $na_newpassword = isset($_POST["na_newpassword"]) ? $_POST["na_newpassword"] : "N/A";
     $na_newpassword2 = isset($_POST["na_newpassword2"]) ? $_POST["na_newpassword2"] : "N/A";
     $na_title = isset($_POST["na_title"]) ? $_POST["na_title"] : "N/A";
-    $na_footertext = isset($_POST["na_footertest"]) ? $_POST["na_footertext"] : "N/A";
+    $na_footertext = isset($_POST["na_footertext"]) ? $_POST["na_footertext"] : "N/A";
     
     //echo($edit);
     //echo ($content);

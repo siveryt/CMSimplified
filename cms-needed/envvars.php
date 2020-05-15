@@ -1,1 +1,1 @@
-<?php $env_footertext = "© YOUR NAME HERE. All rights reserverd"; $env_username = "admin"; $env_password = 'cmsimplified'; $env_title = "YOUR NAME HERE";?>
+<?php $env_footertext = "YOUR NAME HERE - All rights reserved ©"; $env_username = "admin"; $env_password = 'cmsimplified'; $env_title = "YOUR NAME HERE";?>

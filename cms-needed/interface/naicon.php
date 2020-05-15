@@ -14,9 +14,11 @@ if ($ext == "ico") {
 ?>
 
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
 
 <?php }else{echo("Sie sind nicht berechtigt diese Seite zu betreten!");}  ?>

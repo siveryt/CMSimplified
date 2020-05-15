@@ -6,5 +6,12 @@
                 <tr><td>Menüleiste</td><td><label for=yes>Ja</label><input id="yes" value="yes" name="ns_menu" type=radio checked><label for=no>Nein</label><input id="no" value="no" name="ns_menu" type=radio></td></tr>
                 <tr><td></td><td><button type=submit>Seite erstellen!</button></td></tr>
             </table>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
             </form>
 <?php }else{echo("Sie sind nicht berechtigt diese Seite zu betreten!");} ?>
