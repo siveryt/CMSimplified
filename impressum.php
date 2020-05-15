@@ -1,0 +1,1 @@
+<?php require_once("cms-needed/file.php") ?>

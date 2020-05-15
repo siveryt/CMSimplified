@@ -1,0 +1,1 @@
+<?php try{require_once("cms-needed/file.php");}catch(exception $e){echo("Es ist ein Fataler Fehler aufgetreten! $e");} ?>

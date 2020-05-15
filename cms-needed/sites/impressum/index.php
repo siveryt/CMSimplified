@@ -1,0 +1,1 @@
+<div id="sidebar"><h1><?php include_once("sidebar.php") ?></h1></div><div id="main"><?php include_once("content.php") ?></div>
