@@ -10,7 +10,7 @@ if(!is_dir("cms-needed/sites/$ns_id")){
                     //vars.php
                     file_put_contents("cms-needed/sites/$ns_id/vars.php","<?php \$ts_title = '$ns_name'; \$ts_menu = $ns_menu; ?>");
                     //index.php
-                    file_put_contents("cms-needed/sites/$ns_id/index.php", '<div id="sidebar"><h1><?php include_once("sidebar.php") ?></h1></div><div id="main"><?php include_once("content.php") ?></div>');
+                    file_put_contents("cms-needed/sites/$ns_id/index.php", '<div id="sidebar"><h1><?php include_once("sidebar.php") ?></h1></div><div id="main"><?php include_once("cms-needed/parsedown-master/Parsedown.php");$Parsedown = new Parsedown();echo $Parsedown->text(file_get_contents("cms-needed/sites/$file/content.php")); ?></div>');
                     //Hauptdatei
                     file_put_contents("$ns_id.php", '<?php require_once("cms-needed/file.php") ?>');
                     echo("Die seite wurde erfolgreich erstellt! <a href=\"interface.php?type=editsite&edit=$ns_id\">Seite bearbeiten</a>");

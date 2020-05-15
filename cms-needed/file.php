@@ -24,8 +24,7 @@ require_once("cms-needed/sites/$file/vars.php") ?>
 
     <?php include_once("cms-needed/const/footer.php")?>
     <!-- Footer -->
-
-    </div>
+    
 </body>
 
 </html>
