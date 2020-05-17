@@ -21,6 +21,7 @@ if ($_SESSION[succes]){
     $na_newpassword2 = isset($_POST["na_newpassword2"]) ? $_POST["na_newpassword2"] : "N/A";
     $na_title = isset($_POST["na_title"]) ? $_POST["na_title"] : "N/A";
     $na_footertext = isset($_POST["na_footertext"]) ? $_POST["na_footertext"] : "N/A";
+    $lang = isset($_POST["lang"]) ? $_POST["lang"] : "N/A";
     
     //echo($edit);
     //echo ($content);

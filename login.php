@@ -52,9 +52,9 @@ if (isset($_POST["submit"])){
             
                 <table>
                 
-                    <tr><td><label for="username">Benutzername: &nbsp;</label></td><td><input type="text" name="username" id="username" placeholder="Benutzername" length=20></td></tr>
-                    <tr><td><label for="password">Passwort: &nbsp;</label></td><td><input type="password" name="password" id="password" placeholder="Passwort" length=20></td></tr>
-                    <tr><td></td><th><button name="submit" type=submit >Login</button></th></tr>
+                    <tr><td><label for="username"><?php echo $lang_username ?>: &nbsp;</label></td><td><input type="text" name="username" id="username" placeholder="<?php echo $lang_username ?>" length=20></td></tr>
+                    <tr><td><label for="password"><?php echo $lang_password ?>: &nbsp;</label></td><td><input type="password" name="password" id="password" placeholder="<?php echo $lang_password ?>" length=20></td></tr>
+                    <tr><td></td><th><button name="submit" type=submit ><?php echo $lang_login ?></button></th></tr>
                 
                 </table>
             

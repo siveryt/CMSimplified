@@ -1,12 +1,12 @@
 <?php error_reporting(E_ERROR | E_PARSE);if($_SESSION[succes]){ ?>
-<?php echo("Bist du dir sicher, dass du $pre_file löschen willst? Dies kann nicht mehr rückgängig gemacht werden!"); ?>
+<?php echo("$lang_confirmdeletefile[0]$pre_file$lang_confirmdeletefile[1]"); ?>
 <br/>
 <br/>
-<button onclick="window.location = 'interface.php?type=deletefile&link=<?php echo($pre_file);?>&confirm=true';" >Ich bin mir sicher! Seite löschen!</button>
-<button onclick="window.location = 'interface.php?type=napreview&link=<?php echo($pre_file);?>';">Ich habs mir doch anders überlegt.</button>
+<button onclick="window.location = 'interface.php?type=deletefile&link=<?php echo($pre_file);?>&confirm=true';" ><?php echo($lang_confirmdeletefile_confirm); ?></button>
+<button onclick="window.location = 'interface.php?type=napreview&link=<?php echo($pre_file);?>';"><?php echo($lang_confrimdeletefile_no); ?></button>
 <br/>
     <br/>
     <br/>
     <br/>
 
-<?php }else{echo("Sie sind nicht berechtigt diese Seite zu betreten!");} ?>
+    <?php }else{require_once("../envvars.php"); require_once("../language/$env_lang");echo ("<p>$lang_interface_norights</p>");}  ?>

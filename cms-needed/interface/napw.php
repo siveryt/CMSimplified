@@ -6,8 +6,8 @@ if($_SESSION[succes]){ ?>
     if($na_newpassword == $na_newpassword2){
 
         echo($na_newpassword);
-        file_put_contents("cms-needed/envvars.php", "<?php \$env_footertext = \"$env_footertext\"; \$env_username = \"$na_newusername\"; \$env_password = '$na_newpassword'; \$env_title = \"$env_title\";?>");?>
-        <p>Alle änderungen wurden gespeichert. </p><a href=interface.php>Zurück</a>
+        file_put_contents("cms-needed/envvars.php", "<?php \$env_footertext = \"$env_footertext\"; \$env_username = \"$na_newusername\"; \$env_password = '$na_newpassword'; \$env_title = \"$env_title\";  \$env_lang = \"$env_lang\"?>");?>
+        <p><?php echo $lang_pw_result ?> </p><a href=interface.php><?php echo $lang_back ?></a>
         <br/>
         <br/>
         <br/>
@@ -16,8 +16,8 @@ if($_SESSION[succes]){ ?>
         <br/>
         <br/>
 
-    <?php }else {echo("Die beiden Passwörter waren Falsch!");}
+    <?php }else {echo($lang_pw_nomatch);}
 
-}else {echo("Das Passwort war Falsch! Versuchen sie es erneut!");} ?>
+}else {echo($lang_pw_oldpwno);} ?>
 
-<?php }else{echo("Sie sind nicht berechtigt diese Seite zu betreten!");}  ?>
+<?php }else{require_once("../envvars.php"); require_once("../language/$env_lang");echo ("<p>$lang_interface_norights</p>");}  ?>

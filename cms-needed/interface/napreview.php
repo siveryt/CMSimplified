@@ -9,7 +9,7 @@
     <br/>
     <br/>
     <form method=POST action=interface.php?type=confirmdeletefile&link=<?php echo($pre_file); ?>>
-    <button type=submit>Datei löschen</button>
+    <button type=submit><?php echo $lang_preview_delete ?></button>
     </form>
 
-<?php }else{echo("Sie sind nicht berechtigt diese Seite zu betreten!");}  ?>
+    <?php }else{require_once("../envvars.php"); require_once("../language/$env_lang");echo ("<p>$lang_interface_norights</p>");}  ?>

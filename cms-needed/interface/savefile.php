@@ -4,6 +4,6 @@
 file_put_contents("cms-needed/sites/$sf/content.php", $sf_content);
 file_put_contents("cms-needed/sites/$sf/sidebar.php", $sf_sidebar);
 file_put_contents("cms-needed/sites/$sf/vars.php", "<?php \$ts_title = '$sf_title'; \$ts_menu = '$sf_menu'; ?>");
-echo("Änderungen wurden gespeichert! <b>Seite nicht aktualisieren!</br><br/> <a href=\"interface.php\">Hauptseite</a><br/><br/><br/><br/><br/><br/>");
+echo("$lang_savefile_result <b>$lang_savefile_noreload</b></br><br/> <a href=\"interface.php\">$lang_back</a><br/><br/><br/><br/><br/><br/>");
 
-}else{echo("Sie sind nicht berechtigt diese Seite zu betreten!");} ?>
+?><?php }else{require_once("../envvars.php"); require_once("../language/$env_lang");echo ("<p>$lang_interface_norights</p>");}  ?>

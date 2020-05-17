@@ -1,1 +1,1 @@
-<?php $ts_title = 'Impressum'; $ts_menu = 'no'; ?>
+<?php $ts_title = 'Imprint'; $ts_menu = 'no'; ?>

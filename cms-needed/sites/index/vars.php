@@ -1,1 +1,1 @@
-<?php $ts_title = 'Startseite'; $ts_menu = 'yes'; ?>
+<?php $ts_title = 'Home'; $ts_menu = 'yes'; ?>
