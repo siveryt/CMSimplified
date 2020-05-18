@@ -1,1 +1,1 @@
-<?php $visit_totalcount = 0?>
+<?php $visit_totalcount = 1?>
