@@ -62,7 +62,7 @@ if (isset($_POST["submit"])){
 
             <?php if (isset($_POST["submit"])){
 
-                echo("<p>Benutzername oder Passwort falsch!</p>");
+                echo("<p>$lang_wronglogin</p>");
 
             }?>
 

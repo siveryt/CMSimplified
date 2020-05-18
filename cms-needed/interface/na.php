@@ -5,7 +5,7 @@ if($_SESSION[succes]){ ?>
     <form action="interface.php?type=nasave" method="POST">
     <table>
     
-    <tr><td><label for=na_title><abbr title="<?php echo $lang_na_title_abbr ?>"><?php $lang_na_title ?></abbr></label></td><td><input type=text id=na_title size=50 name=na_title value="<?php echo($env_title); ?>"></td></tr>
+    <tr><td><label for=na_title><abbr title="<?php echo $lang_na_title_abbr ?>"><?php echo $lang_na_title ?></abbr></label></td><td><input type=text id=na_title size=50 name=na_title value="<?php echo($env_title); ?>"></td></tr>
     <tr><td><label for=na_footertext><abbr title="<?php echo $lang_na_footertext_abbr ?>"><?php echo $lang_na_footertext ?></abbr></label></td><td><input type=text id=na_footertext name=na_footertext size=50 value="<?php echo($env_footertext) ?>" ></td></tr>
     <tr><td></td><td><button type=submit><?php echo $lang_save ?></button></td></tr></form>
     <tr><td>&nbsp;</td></tr>
@@ -35,13 +35,14 @@ if($_SESSION[succes]){ ?>
         }
         closedir($handle);
     }
+    
     ?>
     </select>
     <button type=submit>Change</button>
     </form>
     <hr>
     <br/>
-
+    <?php require_once("cms-needed/envvars.php"); include("cms-needed/language/$env_lang");  ?>
     <p><?php echo $lang_na_updates ?> <a href=cms.sivery.de>cmsupdate.sivery.de</a></p>
 
     <br/>

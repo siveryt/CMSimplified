@@ -41,8 +41,8 @@ require_once("cms-needed/envvars.php"); ?>
     <!-- Menu & Head -->
     <div id="sidebar">
                 <h1>Editor</h1> <br/>
-                <a href="interface.php"><b>Einstellungen</b></a><br/>
-                <a href="interface.php?type=newsite"><b>&#43; Neue Seite</b></a><br/>
+                <a href="interface.php"><b><?php echo $lang_setting ?></b></a><br/>
+                <a href="interface.php?type=newsite"><b>&#43; <?php echo $lang_newsite ?></b></a><br/>
                 <?php
                 if ($handle = opendir('cms-needed/sites')) {
                     while (false !== ($entry = readdir($handle))) {
