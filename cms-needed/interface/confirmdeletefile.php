@@ -2,7 +2,8 @@
 <?php echo("$lang_confirmdeletefile[0]$pre_file$lang_confirmdeletefile[1]"); ?>
 <br/>
 <br/>
-<button onclick="window.location = 'interface.php?type=deletefile&link=<?php echo($pre_file);?>&confirm=true';" ><?php echo($lang_confirmdeletefile_confirm); ?></button>
+<?php $link = str_replace(' ', '+', $pre_file); ?>
+<button onclick="window.location = 'interface.php?type=deletefile&link=<?php echo(str_replace(' ', '+', $pre_file));?>&confirm=true';" ><?php echo($lang_confirmdeletefile_confirm); ?></button>
 <button onclick="window.location = 'interface.php?type=napreview&link=<?php echo($pre_file);?>';"><?php echo($lang_confrimdeletefile_no); ?></button>
 <br/>
     <br/>

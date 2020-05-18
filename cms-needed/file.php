@@ -22,6 +22,8 @@ require_once("cms-needed/sites/$file/vars.php") ?>
     <?php include_once("cms-needed/sites/$file/index.php") ?>
     <!-- Inhalt -->
 
+    <div class="ad"><?php echo($env_ad); ?></div>
+
     <?php include_once("cms-needed/const/footer.php")?>
     <!-- Footer -->
     

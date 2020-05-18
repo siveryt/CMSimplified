@@ -71,4 +71,6 @@ $lang_login = "Login";
 $lang_setting = "Einstellungen";
 $lang_newsite = "Neue Seite";
 $lang_wronglogin = "Benutzername oder Psswort falsch!";
+$lang_na_adbanner_abbr = "Hier den HTML Code für den Werbebanner eingeben";
+$lang_na_adbanner = "Werbebanner";
 ?>

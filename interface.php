@@ -22,6 +22,7 @@ if ($_SESSION[succes]){
     $na_title = isset($_POST["na_title"]) ? $_POST["na_title"] : "N/A";
     $na_footertext = isset($_POST["na_footertext"]) ? $_POST["na_footertext"] : "N/A";
     $lang = isset($_POST["lang"]) ? $_POST["lang"] : "N/A";
+    $na_ad = isset($_POST["na_adbanner"]) ? $_POST["na_adbanner"] : "";
     
     //echo($edit);
     //echo ($content);

@@ -8,7 +8,7 @@
     <br/>
     <br/>
     <br/>
-    <form method=POST action=interface.php?type=confirmdeletefile&link=<?php echo($pre_file); ?>>
+    <form method=POST action=interface.php?type=confirmdeletefile&link=<?php echo(str_replace(' ', '+', $pre_file)); ?>>
     <button type=submit><?php echo $lang_preview_delete ?></button>
     </form>
 

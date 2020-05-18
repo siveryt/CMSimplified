@@ -1,7 +1,7 @@
 <?php error_reporting(E_ERROR | E_PARSE);
 if($_SESSION[succes]){ ?>
 
-<?php file_put_contents("cms-needed/envvars.php", "<?php \$env_footertext = \"$env_footertext\"; \$env_username = \"$env_username\"; \$env_password = '$env_password'; \$env_title = \"$env_title\"; \$env_lang = \"$lang\"?>"); ?>
+<?php file_put_contents("cms-needed/envvars.php", "<?php \$env_footertext = \"$env_footertext\"; \$env_username = \"$env_username\"; \$env_password = '$env_password'; \$env_title = \"$env_title\"; \$env_lang = \"$lang\"; \$env_ad = \"$env_ad\";?>"); ?>
 <p>New language has been set.</p><a href=interface.php><?php echo $lang_back ?></a>
 <br/>
 <br/>

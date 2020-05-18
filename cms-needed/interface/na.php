@@ -7,6 +7,7 @@ if($_SESSION[succes]){ ?>
     
     <tr><td><label for=na_title><abbr title="<?php echo $lang_na_title_abbr ?>"><?php echo $lang_na_title ?></abbr></label></td><td><input type=text id=na_title size=50 name=na_title value="<?php echo($env_title); ?>"></td></tr>
     <tr><td><label for=na_footertext><abbr title="<?php echo $lang_na_footertext_abbr ?>"><?php echo $lang_na_footertext ?></abbr></label></td><td><input type=text id=na_footertext name=na_footertext size=50 value="<?php echo($env_footertext) ?>" ></td></tr>
+    <tr><td><label for=na_adbanner><abbr title="<?php echo $lang_na_adbanner_abbr ?>"><?php echo $lang_na_adbanner ?></abbr></label></td><td><input type=text id=na_adbanner name=na_adbanner size=50 value="<?php echo($env_ad) ?>" ></td></tr>
     <tr><td></td><td><button type=submit><?php echo $lang_save ?></button></td></tr></form>
     <tr><td>&nbsp;</td></tr>
     <form enctype=multipart/form-data action="interface.php?type=nalogo" method="POST"><tr><td><label for=logo><abbr title="<?php echo $lang_na_logo_abbr ?>"><?php echo $lang_na_logo ?>(.png)</abbr></label></td><td><input name=na_logo id=logo type=file value="Logo auswählen"><button class=right type=submit><?php echo $lang_upload ?></button></td></tr></form>
@@ -16,7 +17,7 @@ if($_SESSION[succes]){ ?>
     <hr>
     <br/>
     <?php require_once("cms-needed/phpFileTree/php_file_tree.php");
-    echo("<p><abbr title='$lang_na_upload_abbr <b>\"files/\"</b>'>$lang_na_upload (Powered by <a href=https://www.abeautifulsite.net/php-file-tree>phpFileTree</a>)</abbr></p>");
+    echo("<p><abbr title='$lang_na_upload_abbr \"files/\"'>$lang_na_upload (Powered by <a href=https://www.abeautifulsite.net/php-file-tree>phpFileTree</a>)</abbr></p>");
     echo(php_file_tree("files/", "interface.php?type=napreview&link=[link]")); ?>
     <form method=POST enctype=multipart/form-data action="interface.php?type=upload"><input name="file" type=file><button type=submit><?php echo $lang_upload  ?></button></form>
     <br/>
