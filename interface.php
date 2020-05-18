@@ -44,6 +44,7 @@ require_once("cms-needed/envvars.php"); ?>
                 <h1>Editor</h1> <br/>
                 <a href="interface.php"><b><?php echo $lang_setting ?></b></a><br/>
                 <a href="interface.php?type=newsite"><b>&#43; <?php echo $lang_newsite ?></b></a><br/>
+                <a href="interface.php?type=analytics"><b><?php echo $lang_analytics ?></b></a><br/>
                 <?php
                 if ($handle = opendir('cms-needed/sites')) {
                     while (false !== ($entry = readdir($handle))) {

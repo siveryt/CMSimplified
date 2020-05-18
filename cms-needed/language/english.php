@@ -73,4 +73,6 @@ $lang_newsite = "New Page";
 $lang_wronglogin = "Username or Password wrong!";
 $lang_na_adbanner_abbr = "Enter here the HTML Code for the AdBanner you want to display";
 $lang_na_adbanner = "AdBanner";
+$lang_analytics = "Analytics";
+$lang_visitors_total = "Total visits";
 ?>

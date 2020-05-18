@@ -22,6 +22,10 @@ require_once("cms-needed/sites/$file/vars.php") ?>
     <?php include_once("cms-needed/sites/$file/index.php") ?>
     <!-- Inhalt -->
 
+    <?php include("cms-needed/visits.php");
+    $count = $visit_totalcount + 1;
+    file_put_contents("cms-needed/visits.php", "<?php \$visit_totalcount = $count?>") ?>
+
     <div class="ad"><?php echo($env_ad); ?></div>
 
     <?php include_once("cms-needed/const/footer.php")?>
